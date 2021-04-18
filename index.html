@@ -25,15 +25,25 @@ tw-passage {
   top:-15vh;
 }
 tw-sidebar {
- visibility: hidden
+  max-height: 100vh;
+  margin-top: 5vh;
 }
-
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
 	animation:appear 0ms step-start
 }
 .enchantment-mouseover {
 	border-bottom: hidden;
+}
+tw-story {
+  margin-top: 0;
+}
+tw-icon[alt] {
+    opacity: 0.4;
+}
+tw-icon:hover {
+	opacity: 0.1;
+	font-weight: bold;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="102,98" size="100,100">{(set: $wereld1 to &quot;de wereld&quot;)
 (opacity: 0)|next&gt;[ [[i|Next-&gt;2]]]
 (mouseover-goto: $wereld1, &#39;2&#39;)}
@@ -76,7 +86,7 @@ Die dag stond (text-style:&quot;underline&quot;)[$wereld1] op z&#39;n kop.
 
 Die dag stond (text-style:&quot;underline&quot;)[de wereld] op z&#39;n kop.
 
-We wisten niet waarom het gebeurde. Sommigen van ons vroegen zich af of het aan ons lag. Of we tot de verkeerde Goden hadden gebeden of de verkeerde dingen hadden gezegd. Maar dat was niet zo; (text-style:&quot;underline&quot;)[$wereld2] stond alleen op z’n kop.</tw-passagedata><tw-passagedata pid="3" name="3" tags="" position="100,500" size="100,100">{(set: $omgekeerd to &quot;omgekeerd&quot;)
+We wisten niet waarom het gebeurde. Sommigen van ons vroegen zich af of het aan ons lag. Of we tot de verkeerde Goden hadden gebeden of de verkeerde dingen hadden gezegd. Maar dat was niet zo; (text-style:&quot;underline&quot;)[$wereld2] stond alleen op z’n kop.</tw-passagedata><tw-passagedata pid="3" name="3" tags="" position="100,500" size="100,100">{(set: $omgekeerd to &quot;de zwaartekracht&quot;)
 (opacity: 0)|next&gt;[ [[i|Next-&gt;4]]]
 (mouseover-goto: $omgekeerd, &#39;4&#39;)}
 
@@ -96,9 +106,10 @@ Die dag stond (text-style:&quot;underline&quot;)[de wereld] op z&#39;n kop.
 
 We wisten niet waarom het gebeurde. Sommigen van ons vroegen zich af of het aan ons lag. Of we tot de verkeerde Goden hadden gebeden of de verkeerde dingen hadden gezegd. Maar dat was niet zo; (text-style:&quot;underline&quot;)[de wereld] stond alleen op z’n kop.
 
-Wetenschappers die het geluk hadden het voorval te overleven zeiden dat de zwaartekracht niet zozeer was verdwenen, maar zich als het ware had (text-style:&quot;underline&quot;)[omgekeerd], alsof onze planeet in een kwinkslag al haar massa had verloren en door een kolossaal object werd omringd. Gelovigen die de pech hadden het wonder te overleven, zeiden dat het geven en nemen was en God nu eindelijk nam, na zoveel jaren gegeven te hebben. Maar er was geen kolossaal object, en door God genomen worden is een discutabel gegeven.
-</tw-passagedata><tw-passagedata pid="4" name="4" tags="" position="301,98" size="100,100">{(set: $wereld to &quot;de wereld&quot;)
-(opacity: 0)|next&gt;[ [[i|Next-&gt;5]]]}
+Wetenschappers die het geluk hadden het voorval te overleven zeiden dat (text-style:&quot;underline&quot;)[de zwaartekracht] niet zozeer was verdwenen, maar zich als het ware had omgekeerd, alsof onze planeet in een kwinkslag al haar massa had verloren en door een kolossaal object werd omringd. Gelovigen die de pech hadden het wonder te overleven, zeiden dat het geven en nemen was en God nu eindelijk nam, na zoveel jaren gegeven te hebben. Maar er was geen kolossaal object, en door God genomen worden is een discutabel gegeven.
+</tw-passagedata><tw-passagedata pid="4" name="4" tags="" position="301,98" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;5]]]
+(set: $koffie to &quot;kopjes koffie&quot;)
+(mouseover-goto: $koffie, &#39;5&#39;)}
 
 
 
@@ -112,32 +123,12 @@ Wetenschappers die het geluk hadden het voorval te overleven zeiden dat de zwaar
 
 
 
-Het gebeurde als een donderslag bij heldere hemel, om vijf over tien ’s ochtends. Er was een moment, een magisch moment, waarop je ons allemaal halverwege onze woonkamers in de lucht kon zien  (text-style:&quot;sway&quot;)[zweven] , ondersteboven in de houding van onze laatste bezigheid, koffiedrinkers koffiedrinkend uit omgekeerde (text-style:&quot;mirror&quot;)[kopjes koffie], verliefden zich vastklampend aan elkaars vallende lichaam, oude mannen graaiend naar afglijdende toupetjes, kinderen kraaiend en katten krijsend, allen omringd door de asteroïden van onze bezittingen; o, het was een moment van volmaakte waanzin, bevroren in de tijd. Toen begon het gekraak en gerinkel, het gebulder en geschreeuw. Een pandemonium was het. We kwakten tegen plafonds en werden verpletterd onder het puin van ons oude leven. Schedels kraakten. Nekken braken. Baby’s stuiterden. De meeste van ons stierven ter plekke of staken stuiptrekkend uit gaten in gipsplaten plafonds. Zij die overleefden lagen verbijsterd op inzakkende zolderingen, proberend te bevatten wat er zojuist was gebeurd.
+Het gebeurde als een donderslag bij heldere hemel, om vijf over tien ’s ochtends. Er was een moment, een magisch moment, waarop je (text-style:&quot;underline&quot;)[ons] allemaal halverwege onze woonkamers in de lucht kon zien zweven, ondersteboven in de houding van onze laatste bezigheid, koffiedrinkers koffiedrinkend uit omgekeerde (text-style:&quot;underline&quot;)[kopjes koffie], verliefden zich vastklampend aan elkaars vallende lichaam, oude mannen graaiend naar afglijdende toupetjes, kinderen kraaiend en katten krijsend, allen omringd door de asteroïden van onze bezittingen; o, het was een moment van volmaakte waanzin, bevroren in de tijd. Toen begon het gekraak en gerinkel, het gebulder en geschreeuw. Een pandemonium was het. We kwakten tegen plafonds en werden verpletterd onder het puin van ons oude leven. Schedels kraakten. Nekken braken. Baby’s stuiterden. De meeste van ons stierven ter plekke of staken stuiptrekkend uit gaten in gipsplaten plafonds. Zij die overleefden lagen verbijsterd op inzakkende zolderingen, proberend te bevatten wat er zojuist was gebeurd.
 
 
-
-
-
-
-
-</tw-passagedata><tw-passagedata pid="5" name="5" tags="" position="300,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;6]]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Maar buiten was het altijd nog erger. Voor iemand ook maar besefte dat de hemel niet langer boven, maar onder ons was, viel men pardoes van het aardoppervlak. Binnen de kortste keren was het luchtruim bezaaid met tuimelende mensen, wapperende kledingstukken, spartelende honden, wentelende auto’s, klepperende dakpannen, loeiend vee en dwarrelende herfstbladeren in kleuren die de lucht in vuur en vlam zetten. Mensen onder portieken rollebolden tot ze tot stilstand kwamen op krakende afdakjes en staarden over de rand in peilloze diepten. Een mol die zijn neus uit de grond stak werd gegrepen door de zwaartekracht en een opspringende walvis zou nooit meer terug in zee landen. Moe van haar last schudde Moedertje Aarde al wat niet met haar oppervlak in verbinding stond van zich af. In een opwaartse stuwing viel het de dampkring in. Vliegtuigen, satellieten en ruimtestations verdwenen in het vacuüm en zelfs Vadertje Maan werd van ons weggeduwd. We zagen hem kleiner en kleiner worden, tot hij verdrietig zijn eigen baan om de zon trok. Hij zei niet eens vaarwel.
-
-</tw-passagedata><tw-passagedata pid="6" name="6" tags="" position="299,501" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;7]]]
+</tw-passagedata><tw-passagedata pid="5" name="5" tags="" position="300,300" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;6]]]
+(set: $maan to &quot;Vadertje Maan&quot;)
+(mouseover-goto: $maan, &#39;6&#39;)}
 
 
 
@@ -151,15 +142,25 @@ Maar buiten was het altijd nog erger. Voor iemand ook maar besefte dat de hemel 
 
 
 
+Maar buiten was het altijd nog erger. Voor iemand ook maar besefte dat de hemel niet langer boven, maar onder ons was, viel men pardoes van het aardoppervlak. Binnen de kortste keren was het luchtruim bezaaid met tuimelende mensen, wapperende kledingstukken, spartelende honden, wentelende auto’s, klepperende dakpannen, loeiend vee en dwarrelende herfstbladeren in kleuren die de lucht in vuur en vlam zetten. Mensen onder portieken rollebolden tot ze tot stilstand kwamen op krakende afdakjes en staarden over de rand in peilloze diepten. Een mol die zijn neus uit de grond stak werd gegrepen door de zwaartekracht en (text-style:&quot;underline&quot;)[een opspringende walvis] zou nooit meer terug in zee landen. Moe van haar last schudde Moedertje Aarde al wat niet met haar oppervlak in verbinding stond van zich af. In een opwaartse stuwing viel het de dampkring in. Vliegtuigen, satellieten en ruimtestations verdwenen in het vacuüm en zelfs (text-style:&quot;underline&quot;)[Vadertje Maan] werd van ons weggeduwd. We zagen hem kleiner en kleiner worden, tot hij verdrietig zijn eigen baan om de zon trok. Hij zei niet eens vaarwel.</tw-passagedata><tw-passagedata pid="6" name="6" tags="" position="299,501" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;7]]]
+(set: $ik to &quot;En ik?&quot;)
+(mouseover-goto: $ik, &#39;7&#39;)}
 
 
 
 
-En ik?</tw-passagedata><tw-passagedata pid="7" name="7" tags="" position="500,100" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;8]]]
 
 
 
 
+
+
+
+
+
+En ik?</tw-passagedata><tw-passagedata pid="7" name="7" tags="" position="500,100" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;8]]]
+(set: $wereld3 to &quot;de wereld&quot;)
+(mouseover-goto: $wereld3, &#39;8&#39;)}
 
 
 
@@ -175,14 +176,10 @@ En ik?</tw-passagedata><tw-passagedata pid="7" name="7" tags="" position="500,10
 
 En ik?
 
-Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was de wereld op dat moment vergaan, dan had ik het niet gemerkt.
-</tw-passagedata><tw-passagedata pid="8" name="8" tags="" position="500,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;9]]]
-
-
-
-
-
-
+Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was (text-style:&quot;underline&quot;)[de wereld] op dat moment vergaan, dan had ik het niet gemerkt.
+</tw-passagedata><tw-passagedata pid="8" name="8" tags="" position="500,300" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;9]]]
+(set: $bellen to &quot;bellen&quot;)
+(mouseover-goto: $bellen, &#39;9&#39;)}
 
 
 
