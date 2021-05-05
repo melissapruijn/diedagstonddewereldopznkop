@@ -359,7 +359,7 @@ Maar buiten was het altijd nog erger. Voor iemand ook maar besefte dat de hemel 
 pointer.style.visibility = &#39;hidden&#39;;
 &lt;/script&gt;
 
-</tw-passagedata><tw-passagedata pid="6" name="6" tags="" position="300,495" size="100,100">
+</tw-passagedata><tw-passagedata pid="6" name="6" tags="" position="300,493" size="100,100">
 
 
 
@@ -425,7 +425,7 @@ document.body.addEventListener(&quot;mousemove&quot;, mirrorMouseY);
 document.body.addEventListener(&quot;mousemove&quot;, trackMouse);
 document.body.style.cursor = &#39;none&#39;;
 pointer.style.visibility = &#39;visible&#39;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="10" tags="" position="703,100" size="100,100">
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="10" tags="" position="704,96" size="100,100">
 
 
 
@@ -451,6 +451,8 @@ We stonden in de gang en ik kon de woorden nauwelijks uitspreken. ‘Weet je het
 
 [[[Volgende-&gt;11]]]&lt;next|
 &lt;script&gt;
+document.body.removeEventListener(&quot;mousemove&quot;, mirrorMouseX);
+document.body.removeEventListener(&quot;mousemove&quot;, mirrorMouseY);
 document.body.style.cursor = &#39;url(&quot;https://i.ibb.co/QnSBND0/cursor.png&quot;) 8 8, auto&#39;;
 pointer.style.visibility = &#39;hidden&#39;;
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="10" name="11" tags="" position="702,296" size="100,100">
@@ -510,7 +512,9 @@ Eindelijk keek je me aan, met tranen in je ogen, en schudde toen langzaam je hoo
 &lt;script&gt;
 clearInterval(floatCursor);
 document.body.removeEventListener(&quot;mousemove&quot;, mirrorMouseY);
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="12" name="13" tags="" position="900,97" size="100,100">
+document.body.style.cursor = &#39;url(&quot;https://i.ibb.co/QnSBND0/cursor.png&quot;) 8 8, auto&#39;;
+pointer.style.visibility = &#39;hidden&#39;;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="12" name="13" tags="" position="899,94" size="100,100">
 
 
 
@@ -536,6 +540,7 @@ Jij glimlachte door je tranen heen.
 [[[Volgende-&gt;14]]]&lt;float|
 
 &lt;script&gt;
+var floatCursor = setInterval(floatMouse, 1);
 document.body.style.cursor = &#39;none&#39;;
 pointer.style.visibility = &#39;visible&#39;;
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="13" name="14" tags="" position="903,296" size="100,100">
@@ -574,7 +579,7 @@ Het was laat toen je sms’te. Ik lag op de bank, niet echt slapend en niet echt
 
 &lt;script&gt;
 pointer.style.visibility = &#39;visible&#39;;
-document.body.addEventListener(&quot;mousemove&quot;, trackMouse);
+document.body.addEventListener(&quot;mousemove&quot;, mirrorMouseX);
 &lt;/script&gt;
 
 </tw-passagedata><tw-passagedata pid="15" name="17" tags="" position="1101,301" size="100,100">
